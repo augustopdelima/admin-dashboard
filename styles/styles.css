@@ -2,7 +2,7 @@
     --primary-color: #f1e4e8;
     --second-color: #e2dcde;
     --third-color:#420039;
-    --fourth-color:#456990;
+    --fourth-color:#5e8ec2;
     --fifth-color:#64b6ac;
     --shadow-sidebar: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
@@ -37,7 +37,12 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
+}
+
+.title {
+    font-size: 1.4rem;
+    color: var(--primary-color);
 }
 
 .container {
@@ -52,8 +57,14 @@ body {
 .sidebar-logo {
     display: flex;
     align-items: center;
-    gap:20px;
+    gap:10px;
     
+}
+
+.tabbar {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
 }
 
 .logo {
