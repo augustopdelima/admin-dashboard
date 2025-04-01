@@ -1,9 +1,9 @@
 :root {
     --primary-color: #ffffff;
     --second-color: #e2e8f0;
-    --third-color:#420039;
-    --fourth-color:#1992d4;
-    --fifth-color:#64b6ac;
+    --third-color: #420039;
+    --fourth-color: #1992d4;
+    --fifth-color: #64b6ac;
     --shadow-header: 1px 2px 14px 1px #cdd2da;
 }
 
@@ -28,8 +28,47 @@ body {
     box-shadow: var(--shadow-header);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding: 8px 2rem;
+    gap: 20px;
 }
 
+.user-name-header {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.icon-header {
+    height: 25px;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    width: 60%; 
+}
+
+.search-bar {
+    padding: 5px;
+    flex: 1;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 25px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
 .content {
     grid-area: content;
@@ -62,14 +101,14 @@ body {
 .sidebar-logo {
     display: flex;
     align-items: center;
-    gap:10px;
-    
+    gap: 10px;
+
 }
 
 .tabbar {
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap: 10px;
     list-style: none;
     padding: 8px;
 }
@@ -78,9 +117,11 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    color:var(--primary-color);
-    font-weight:bold;
+    color: var(--primary-color);
+    font-weight: bold;
 }
+
+
 
 .tabbar .icon {
     height: 20px;
@@ -91,7 +132,9 @@ body {
 }
 
 
-.rounded-image {
+.rounded-image,
+.rounded-image-header, 
+.rounded-image-user {
     border-radius: 50%;
 }
 
@@ -100,5 +143,44 @@ body {
 }
 
 .big-profile-image {
-    width: 100px;
+    width: 75px;
+}
+
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.greeting {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.username {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.profile-actions {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.action-button {
+    background-color: var(--fourth-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    width:100px;
+    font-weight: 600;
 }

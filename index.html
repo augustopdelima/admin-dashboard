@@ -15,19 +15,36 @@
 <body class="container">
 
 	<header class="header">
-		<div>
-			<input type="text" />
-			<img class="rounded-image small-profile-image" src="./assets/imgs/main-user.svg" alt="user image" />
+
+		<div class="search-section">
+			<div class="search-box">
+				<img class="icon-header" src="./assets/icons/search.svg" alt="search icon" />
+				<input class="search-bar" type="text" />
+			</div>
+
+			<div class="right-section">
+				<img class="icon-header" src="./assets/icons/notification.svg" alt="notifications icon" />
+				<img class="rounded-image-header small-profile-image" src="./assets/imgs/main-user.svg"
+					alt="user image" />
+				<p class="user-name-header">Morgan Oakley</p>
+			</div>
 		</div>
 
-		<div>
-			<img class="rounded-image big-profile-image" src="./assets/imgs/main-user.svg" atl="user image bigger" />
-			<p>Hi there,</p>
-			<p>Morgan Oakley (@morgan)</p>
+		<div  class="profile-section" >
+			
+			<div class="profile-info">
+				<img class="rounded-image-user big-profile-image" src="./assets/imgs/main-user.svg" atl="user image bigger" />
+				<div>
+					<p class="greeting">Hi there,</p>
+					<p class="username">Morgan Oakley (@morgan)</p>
+				</div>
+			</div>
 
-			<button>New</button>
-			<button>Upload</button>
-			<button>Share</button>
+			<div class="profile-actions">
+				<button class="action-button">New</button>
+				<button class="action-button">Upload</button>
+				<button class="action-button">Share</button>
+			</div>
 		</div>
 	</header>
 
@@ -50,9 +67,9 @@
 		<ul class="tabbar">
 			<li><img class="icon" src="./assets/icons/settings.svg" alt="settings icon" /> Settings</li>
 			<li><img class="icon" src="./assets/icons/support.svg" alt="support icon" /> Support</li>
-			<li><img class="icon" src="./assets/icons/privacy.svg" alt="privacy icon"/> Privacy</li>
+			<li><img class="icon" src="./assets/icons/privacy.svg" alt="privacy icon" /> Privacy</li>
 		</ul>
-	
+
 	</aside>
 
 	<main class="content">
