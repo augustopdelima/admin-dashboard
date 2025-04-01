@@ -1,12 +1,11 @@
 :root {
-    --primary-color: #f1e4e8;
-    --second-color: #e2dcde;
+    --primary-color: #ffffff;
+    --second-color: #e2e8f0;
     --third-color:#420039;
-    --fourth-color:#5e8ec2;
+    --fourth-color:#1992d4;
     --fifth-color:#64b6ac;
-    --shadow-sidebar: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    --shadow-header: 1px 2px 14px 1px #cdd2da;
 }
-
 
 * {
     box-sizing: border-box;
@@ -19,21 +18,24 @@ body {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
 
 .header {
     grid-area: header;
+    position: relative;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow-header);
 }
 
 .content {
     grid-area: content;
+    background-color: var(--second-color);
 }
 
 .sidebar {
     grid-area: sidebar;
     background-color: var(--fourth-color);
-    box-shadow: var(--shadow-sidebar);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -65,6 +67,20 @@ body {
     display: flex;
     flex-direction: column;
     gap:10px;
+    list-style: none;
+    padding: 8px;
+}
+
+.tabbar li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color:var(--primary-color);
+    font-weight:bold;
+}
+
+.tabbar .icon {
+    height: 20px;
 }
 
 .logo {
