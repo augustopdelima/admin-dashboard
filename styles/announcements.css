@@ -3,6 +3,9 @@
     background-color: var(--primary-color);
     border-radius: 5px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .announcement {
@@ -11,18 +14,18 @@
     min-height: 80px;  
     max-width: 100%;
     gap: 5px;
-    padding: 20px 8px;
 }
 
 .announcement:not(:last-child){
-    border-bottom: 1px solid var(--seventh-color);
+    border-bottom: 1px solid var(--eighth-color);
 }
 
-.announcement-title, .announcement-description {
+.announcement-title {
     font-size: 1rem;
 }
 
 .announcement-description {
+    font-size: 0.8rem;
     display: -webkit-box;
     max-width: 45ch;
     line-clamp: 4;

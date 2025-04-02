@@ -1,0 +1,23 @@
+.trending-wrapper {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.trending-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.trending-list li {
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+.user-project {
+    color: var(--seventh-color);
+}
