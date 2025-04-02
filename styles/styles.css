@@ -196,6 +196,9 @@ body {
 
 .projects-section {
     grid-area: projects-section;
+}
+
+.projects-section, .announcements-section, .trending-section {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -212,11 +215,11 @@ body {
 
 .content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-        "projects-section projects-section announcements-section"
-        "projects-section projects-section announcements-section"
-        "projects-section projects-section trending-section";
+        "projects-section projects-section projects-section announcements-section"
+        "projects-section projects-section projects-section announcements-section"
+        "projects-section projects-section projects-section trending-section";
     gap: 20px;
     padding: 20px;
 }
