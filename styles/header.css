@@ -1,0 +1,92 @@
+.header {
+    position: relative;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow-header);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 2rem;
+    gap: 20px;
+}
+
+.user-name-header {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.icon-header {
+    height: 25px;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+}
+
+.search-bar {
+    padding: 5px;
+    flex: 1;
+    background-color: var(--second-color);
+    border: none;
+    border-radius: 25px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.greeting {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.username {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.profile-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.action-button {
+    background-color: var(--fourth-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100px;
+    font-weight: 600;
+}
+
+.action-button:hover {
+    cursor: pointer;
+    background-color: var(--third-color);
+}
+
+

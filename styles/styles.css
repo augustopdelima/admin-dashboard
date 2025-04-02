@@ -4,9 +4,9 @@
     --third-color: #420039;
     --fourth-color: #1992d4;
     --fifth-color: #64b6ac;
-    --sixth-color:#f0b429;
-    --seventh-color:#636363;
-    --eighth-color:#8f8e8e;
+    --sixth-color: #f0b429;
+    --seventh-color: #636363;
+    --eighth-color: #8f8e8e;
     --shadow-header: 1px 2px 14px 1px #cdd2da;
 }
 
@@ -26,51 +26,6 @@ body {
 
 .header {
     grid-area: header;
-    position: relative;
-    background-color: var(--primary-color);
-    box-shadow: var(--shadow-header);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 8px 2rem;
-    gap: 20px;
-}
-
-.user-name-header {
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.icon-header {
-    height: 25px;
-}
-
-.search-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-    width: 60%; 
-}
-
-.search-bar {
-    padding: 5px;
-    flex: 1;
-    background-color: var(--second-color);
-    border: none;
-    border-radius: 25px;
-}
-
-.right-section {
-    display: flex;
-    align-items: center;
-    gap: 20px;
 }
 
 .content {
@@ -80,17 +35,8 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    background-color: var(--fourth-color);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
 }
 
-.title {
-    font-size: 1.4rem;
-    color: var(--primary-color);
-}
 
 .container {
     display: grid;
@@ -100,43 +46,8 @@ body {
     grid-template-columns: 1fr repeat(2, 3fr);
 }
 
-
-.sidebar-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-}
-
-.tabbar {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
-    padding: 8px;
-}
-
-.tabbar li {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-
-
-.tabbar .icon {
-    height: 20px;
-}
-
-.logo {
-    height: 50px;
-}
-
-
 .rounded-image,
-.rounded-image-header, 
+.rounded-image-header,
 .rounded-image-user {
     border-radius: 50%;
 }
@@ -150,46 +61,7 @@ body {
 }
 
 
-.profile-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.profile-info {
-    display: flex;
-    align-items: center;
-    gap:10px;
-}
-
-.greeting {
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-.username {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.profile-actions {
-    display: flex;
-    align-items: center;
-    gap:20px;
-}
-
-.action-button {
-    background-color: var(--fourth-color);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 10px;
-    width:100px;
-    font-weight: 600;
-}
-
-
-/* Sections */
+/* Sections content*/
 .section-title {
     font-weight: 600;
     font-size: 1.5rem;
@@ -199,7 +71,9 @@ body {
     grid-area: projects-section;
 }
 
-.projects-section, .announcements-section, .trending-section {
+.projects-section,
+.announcements-section,
+.trending-section {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -216,7 +90,7 @@ body {
 
 .content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr)  300px;
+    grid-template-columns: repeat(3, 1fr) 300px;
     grid-template-areas:
         "projects-section projects-section projects-section announcements-section"
         "projects-section projects-section projects-section announcements-section"
@@ -224,4 +98,3 @@ body {
     gap: 20px;
     padding: 20px;
 }
-

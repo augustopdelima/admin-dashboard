@@ -26,6 +26,10 @@
     width: 20px;
 }
 
+.project-image:hover {
+    cursor: pointer;
+}
+
 .project-description {
     color: var(--seventh-color);
     text-align: left;
