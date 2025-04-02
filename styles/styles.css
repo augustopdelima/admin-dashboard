@@ -4,6 +4,8 @@
     --third-color: #420039;
     --fourth-color: #1992d4;
     --fifth-color: #64b6ac;
+    --sixth-color:#f0b429;
+    --seventh-color:#636363;
     --shadow-header: 1px 2px 14px 1px #cdd2da;
 }
 
@@ -184,3 +186,38 @@ body {
     width:100px;
     font-weight: 600;
 }
+
+
+/* Sections */
+.section-title {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.projects-section {
+    grid-area: projects-section;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.announcements-section {
+    grid-area: announcements-section;
+}
+
+.trending-section {
+    grid-area: trending-section;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "projects-section projects-section announcements-section"
+        "projects-section projects-section announcements-section"
+        "projects-section projects-section trending-section";
+    gap: 20px;
+    padding: 20px;
+}
+

@@ -1,0 +1,33 @@
+
+.projects-gallery {
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: var(--primary-color);
+    border-left: 8px solid var(--sixth-color);
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 8px; 
+}
+
+.project-icons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.project-image {
+    width: 20px;
+}
+
+.project-description {
+    color: var(--seventh-color);
+    text-align: left;
+    max-width: clamp(45ch, 50%, 75ch);
+}
